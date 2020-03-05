@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <input type="text" id="todosInput" class="autocomplete" />
+              <label for="autocomplete-input"
+                >What do you want to remember?</label
+              >
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <a class="waves-effect waves-light btn" id="btnSave">Add</a>
+              <a class="waves-effect waves-light btn" id="btnCompleteTodos"
+                >Show completed</a
+              >
+              <a class="waves-effect waves-light btn" id="btnClear">Clear</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <table class="striped highlight responsive-table" id="table">
+            <thead>
+              <tr>
+                <th>Todo</th>
+                <th>Date</th>
+                <th>Complete</th>
+              </tr>
+            </thead>
+
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+        <div id="textDisplay" style="display: none;">
+          <h4>No hay todos</h4>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/vendor.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
